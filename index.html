@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO: Primary Meta Tags -->
+    <title>NESTHETIC | Industrial Interior Design in Barrackpore & Kolkata</title>
+    <meta
+      name="description"
+      content="Expert Industrial Interior Design by NESTHETIC Private Limited. Transforming residential and commercial spaces in Barrackpore, Kolkata, and North 24 Parganas with raw elegance."
+    />
+    <meta 
+      name="keywords" 
+      content="Interior Design, Industrial Interior Design, Home Renovation Kolkata, Office Interior Design Barrackpore, Commercial Interiors West Bengal, NESTHETIC, Luxury Interiors" 
+    />
+    <meta name="author" content="NESTHETIC Private Limited" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.nesthetic.in" />
+
+    <!-- SEO: Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.nesthetic.in/" />
+    <meta property="og:title" content="NESTHETIC | Industrial Interior Design Studio" />
+    <meta property="og:description" content="We craft spaces with soul. Premier industrial interior design firm serving Barrackpore and Kolkata. Book your consultation today." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" />
+
+    <!-- SEO: Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.nesthetic.in/" />
+    <meta property="twitter:title" content="NESTHETIC | Industrial Interior Design Studio" />
+    <meta property="twitter:description" content="We craft spaces with soul. Premier industrial interior design firm serving Barrackpore and Kolkata." />
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" />
+
+    <!-- SEO: Local Business Schema (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "InteriorDesignOffice",
+      "name": "NESTHETIC Private Limited",
+      "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6",
+      "url": "https://www.nesthetic.in",
+      "telephone": "+91 9836804988",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Dangadhigila, Kharbagan, P.O - Bandipur",
+        "addressLocality": "Barrackpore",
+        "addressRegion": "West Bengal",
+        "postalCode": "700119",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 22.76, 
+        "longitude": 88.37
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "10:00",
+        "closes": "20:00"
+      },
+      "sameAs": [
+        "https://www.facebook.com/nesthetic",
+        "https://www.instagram.com/nesthetic"
+      ]
+    }
+    </script>
+
+    <!-- Fonts: Montserrat for Headings, Open Sans for Body -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config for Custom Colors/Fonts -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                gold: "#c5a065",
+                dark: "#3e342f",
+                gray: "#f4f4f4",
+                text: "#333333",
+              },
+            },
+            fontFamily: {
+              sans: ["Open Sans", "sans-serif"],
+              heading: ["Montserrat", "sans-serif"],
+            },
+            screens: {
+              'xs': '475px',
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      /* Custom Utilities */
+      .text-shadow {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      .swiper-pagination-bullet-active {
+        background-color: #c5a065 !important;
+      }
+
+      /* --- SMOOTH REVEAL ANIMATIONS --- */
+      .reveal {
+        opacity: 0;
+        transition: opacity 1s ease-out, transform 1s ease-out;
+        will-change: opacity, transform;
+      }
+
+      .reveal.active {
+        opacity: 1;
+        transform: translate(0, 0) !important;
+      }
+
+      .reveal-up {
+        transform: translateY(30px);
+      }
+      .reveal-left {
+        transform: translateX(-30px);
+      }
+      .reveal-right {
+        transform: translateX(30px);
+      }
+      .reveal-fade {
+        /* Just opacity */
+      }
+
+      /* Mobile Menu Transition */
+      #mobile-menu {
+        transition: max-height 0.3s ease-in-out;
+        max-height: 0;
+        overflow: hidden;
+      }
+      #mobile-menu.open {
+        max-height: 400px;
+      }
+
+      /* Swiper Smoothness */
+      .portfolioSwiper .swiper-wrapper {
+        transition-timing-function: cubic-bezier(0.22, 0.9, 0.35, 1);
+        will-change: transform;
+      }
+      .portfolioSwiper .swiper-slide img {
+        transition: transform 1.2s cubic-bezier(0.22, 0.9, 0.35, 1);
+        will-change: transform;
+      }
+
+      /* Fix for 100vh on mobile browsers (address bar issue) */
+      .h-dvh {
+        height: 100vh; /* Fallback */
+        height: 100dvh;
+      }
+    </style>
+  </head>
+  <body class="font-sans text-brand-text antialiased bg-white overflow-x-hidden">
+    
+    <!-- Navigation -->
+    <nav
+      class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-md transition-all duration-300"
+      id="navbar"
+      aria-label="Main Navigation"
+    >
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20 md:h-24 transition-all duration-300" id="navbar-container">
+          <!-- Logo Area -->
+          <a href="#" class="flex-shrink-0 flex items-center gap-2 md:gap-3 group" aria-label="Home">
+            <svg
+              class="w-12 h-12 md:w-[70px] md:h-[70px] transition-all duration-300 group-hover:scale-105"
+              viewBox="0 0 100 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <!-- Roof -->
+              <path d="M10 40 L50 10 L90 40" stroke="#c5a065" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- Walls -->
+              <path d="M20 40 V85 H80 V40" stroke="#c5a065" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- Light Cord -->
+              <line x1="50" y1="10" x2="50" y2="35" stroke="#c5a065" stroke-width="3" stroke-linecap="round"/>
+              <!-- Light Bulb -->
+              <circle cx="50" cy="38" r="3" stroke="#c5a065" stroke-width="3" fill="none"/>
+              <!-- Table Top -->
+              <line x1="35" y1="65" x2="65" y2="65" stroke="#c5a065" stroke-width="3" stroke-linecap="round"/>
+              <!-- Table Leg -->
+              <line x1="50" y1="65" x2="50" y2="85" stroke="#c5a065" stroke-width="3" stroke-linecap="round"/>
+              <!-- Left Chair -->
+              <path d="M30 65 V55 H25" stroke="#c5a065" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <!-- Right Chair -->
+              <path d="M70 65 V55 H75" stroke="#c5a065" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div>
+              <h1 class="font-heading font-bold text-xl md:text-2xl tracking-widest text-brand-dark">
+                NESTHETIC
+              </h1>
+              <p class="text-[8px] md:text-[10px] tracking-wider text-brand-gold uppercase font-semibold">
+                Private Limited
+              </p>
+            </div>
+          </a>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-6 lg:space-x-8 items-center">
+            <a href="#home" class="text-brand-dark hover:text-brand-gold font-medium transition-colors text-sm lg:text-base">Home</a>
+            <a href="#about" class="text-brand-dark hover:text-brand-gold font-medium transition-colors text-sm lg:text-base">About</a>
+            <a href="#services" class="text-brand-dark hover:text-brand-gold font-medium transition-colors text-sm lg:text-base">Services</a>
+            <a href="#portfolio" class="text-brand-dark hover:text-brand-gold font-medium transition-colors text-sm lg:text-base">Portfolio</a>
+            <a
+              href="#contact"
+              class="px-5 py-2 lg:px-6 bg-brand-dark text-white font-heading font-semibold hover:bg-brand-gold transition-colors duration-300 text-sm lg:text-base"
+              >Contact Us</a
+            >
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="md:hidden flex items-center">
+            <button
+              id="mobile-menu-btn"
+              class="text-brand-dark focus:outline-none p-2"
+              aria-label="Toggle Navigation Menu"
+            >
+              <i class="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile Menu Panel -->
+      <div id="mobile-menu" class="md:hidden bg-white shadow-inner border-t border-gray-100">
+        <a href="#home" class="block px-6 py-4 text-brand-dark hover:bg-gray-50 hover:text-brand-gold font-medium border-b border-gray-50">Home</a>
+        <a href="#about" class="block px-6 py-4 text-brand-dark hover:bg-gray-50 hover:text-brand-gold font-medium border-b border-gray-50">About</a>
+        <a href="#services" class="block px-6 py-4 text-brand-dark hover:bg-gray-50 hover:text-brand-gold font-medium border-b border-gray-50">Services</a>
+        <a href="#portfolio" class="block px-6 py-4 text-brand-dark hover:bg-gray-50 hover:text-brand-gold font-medium border-b border-gray-50">Portfolio</a>
+        <a href="#contact" class="block px-6 py-4 text-brand-gold font-bold bg-gray-50">Contact Us</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="relative min-h-[100dvh] flex items-center justify-center overflow-hidden"
+    >
+      <!-- Background Image with Overlay -->
+      <div class="absolute inset-0 z-0">
+        <img
+          src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+          alt="Luxury Industrial Style Living Room Interior Design"
+          class="w-full h-full object-cover"
+          fetchpriority="high"
+        />
+        <div class="absolute inset-0 bg-black/40"></div>
+      </div>
+
+      <div class="relative z-10 text-center px-4 max-w-4xl mx-auto animate__animated animate__fadeInUp pt-16">
+        <h2 class="text-brand-gold font-heading font-bold text-sm md:text-lg tracking-[0.2em] md:tracking-[0.3em] mb-4 uppercase">
+          Best Interior Design Studio in West Bengal
+        </h2>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 text-shadow leading-tight">
+          Crafting Spaces <br class="hidden xs:block" />
+          With Soul
+        </h1>
+        <p class="text-gray-200 text-base sm:text-lg md:text-xl mb-8 md:mb-10 font-light max-w-2xl mx-auto px-4">
+          Where industrial raw aesthetics meet modern luxury. We design
+          residential and commercial environments that tell your story.
+        </p>
+        <div class="flex flex-col xs:flex-row gap-4 justify-center w-full xs:w-auto px-6 xs:px-0">
+          <a
+            href="#portfolio"
+            class="px-8 py-3 bg-brand-gold text-white font-heading font-semibold hover:bg-white hover:text-brand-dark transition-all duration-300 text-center"
+            >View Our Work</a
+          >
+          <a
+            href="#contact"
+            class="px-8 py-3 border-2 border-white text-white font-heading font-semibold hover:bg-white hover:text-brand-dark transition-all duration-300 text-center"
+            >Get a Quote</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-28 bg-white overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <!-- Image Container -->
+          <div class="relative reveal reveal-left max-w-lg mx-auto md:max-w-none w-full">
+            <div class="absolute -top-4 -left-4 w-full h-full border-2 border-brand-gold z-0 hidden xs:block"></div>
+            <img
+              src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+              alt="Professional Interior Designers planning a project in Kolkata"
+              loading="lazy"
+              class="relative z-10 w-full shadow-xl grayscale hover:grayscale-0 transition-all duration-500"
+            />
+          </div>
+          
+          <!-- Text Content -->
+          <div class="reveal reveal-right text-center md:text-left">
+            <h3 class="text-brand-gold font-heading font-bold text-xs md:text-sm tracking-widest uppercase mb-2">
+              Who We Are
+            </h3>
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6">
+              NESTHETIC Private Limited
+            </h2>
+            <p class="text-gray-600 mb-6 leading-relaxed text-sm md:text-base">
+              Registered in West Bengal, NESTHETIC is a premier <strong>interior design firm</strong> specializing in blending functional industrial elements with aesthetic warmth. Our philosophy is rooted in the belief that every space has a unique narrative waiting to be unveiled.
+            </p>
+            <p class="text-gray-600 mb-8 leading-relaxed text-sm md:text-base">
+              From <strong>Barrackpore</strong> to the wider North 24 Parganas region and <strong>Kolkata</strong>, we bring a meticulous eye for detail and a commitment to quality craftsmanship. Whether it's a cozy residential flat renovation or a sprawling commercial office complex, we deliver excellence.
+            </p>
+            <div class="grid grid-cols-2 gap-6 max-w-xs mx-auto md:mx-0">
+              <div>
+                <h4 class="text-3xl md:text-4xl font-heading font-bold text-brand-gold">
+                  50+
+                </h4>
+                <p class="text-xs md:text-sm text-gray-500 uppercase tracking-wide mt-1">
+                  Projects Completed
+                </p>
+              </div>
+              <div>
+                <h4 class="text-3xl md:text-4xl font-heading font-bold text-brand-gold">
+                  100%
+                </h4>
+                <p class="text-xs md:text-sm text-gray-500 uppercase tracking-wide mt-1">
+                  Client Satisfaction
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-20 bg-brand-gray">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12 md:mb-16 reveal reveal-up">
+          <h3 class="text-brand-gold font-heading font-bold text-xs md:text-sm tracking-widest uppercase mb-2">
+            Our Expertise
+          </h3>
+          <h2 class="text-3xl md:text-4xl font-heading font-bold text-brand-dark">
+            Our Design Services
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Service 1 -->
+          <div class="reveal reveal-up">
+            <div class="bg-white p-8 shadow-lg hover:-translate-y-2 transition-transform duration-300 border-b-4 border-brand-gold h-full flex flex-col items-center md:items-start text-center md:text-left">
+              <div class="w-14 h-14 bg-brand-gray rounded-full flex items-center justify-center mb-6 text-brand-gold text-2xl">
+                <i class="fas fa-home" aria-hidden="true"></i>
+              </div>
+              <h3 class="text-xl font-heading font-bold text-brand-dark mb-3">
+                Residential Interiors
+              </h3>
+              <p class="text-gray-600 text-sm md:text-base">
+                Transforming houses into homes. From minimal apartments to luxury villas, we create residential spaces that reflect your personality and style.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="reveal reveal-up" style="transition-delay: 0.2s">
+            <div class="bg-white p-8 shadow-lg hover:-translate-y-2 transition-transform duration-300 border-b-4 border-brand-dark h-full flex flex-col items-center md:items-start text-center md:text-left">
+              <div class="w-14 h-14 bg-brand-gray rounded-full flex items-center justify-center mb-6 text-brand-gold text-2xl">
+                <i class="fas fa-building" aria-hidden="true"></i>
+              </div>
+              <h3 class="text-xl font-heading font-bold text-brand-dark mb-3">
+                Commercial Spaces
+              </h3>
+              <p class="text-gray-600 text-sm md:text-base">
+                Office layouts, retail shops, and commercial spaces optimized for productivity and brand identity, merging form with function.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="reveal reveal-up" style="transition-delay: 0.4s">
+            <div class="bg-white p-8 shadow-lg hover:-translate-y-2 transition-transform duration-300 border-b-4 border-brand-gold h-full flex flex-col items-center md:items-start text-center md:text-left">
+              <div class="w-14 h-14 bg-brand-gray rounded-full flex items-center justify-center mb-6 text-brand-gold text-2xl">
+                <i class="fas fa-industry" aria-hidden="true"></i>
+              </div>
+              <h3 class="text-xl font-heading font-bold text-brand-dark mb-3">
+                Industrial Consulting
+              </h3>
+              <p class="text-gray-600 text-sm md:text-base">
+                Specialized consultation for industrial lofts, factories, and warehouses, utilizing raw materials like steel, brick, and concrete.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery / Swiper Section -->
+    <section id="portfolio" class="py-16 md:py-20 bg-brand-dark text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-10 md:mb-12 reveal reveal-fade text-center md:text-left">
+          <div class="mb-6 md:mb-0">
+            <h3 class="text-brand-gold font-heading font-bold text-xs md:text-sm tracking-widest uppercase mb-2">
+              Recent Work
+            </h3>
+            <h2 class="text-3xl md:text-4xl font-heading font-bold">
+              Our Masterpieces
+            </h2>
+          </div>
+          <!-- Navigation Buttons -->
+          <div class="flex gap-4">
+            <button
+              class="swiper-button-prev-custom w-10 h-10 border border-white/30 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold transition-colors rounded-full md:rounded-none"
+              aria-label="Previous Slide"
+            >
+              <i class="fas fa-arrow-left"></i>
+            </button>
+            <button
+              class="swiper-button-next-custom w-10 h-10 border border-white/30 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold transition-colors rounded-full md:rounded-none"
+              aria-label="Next Slide"
+            >
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper portfolioSwiper reveal reveal-up">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide relative group overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Modern Industrial Loft Interior Design in Kolkata"
+                loading="lazy"
+                class="w-full h-[300px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center flex-col p-6 text-center"
+              >
+                <h4 class="text-xl md:text-2xl font-heading font-bold text-brand-gold mb-2">
+                  Modern Loft
+                </h4>
+                <p class="text-white text-sm md:text-base">Residential Design</p>
+              </div>
+            </div>
+            <div class="swiper-slide relative group overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Tech Office Workspace Interior Design with Modern Lighting"
+                loading="lazy"
+                class="w-full h-[300px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center flex-col p-6 text-center"
+              >
+                <h4 class="text-xl md:text-2xl font-heading font-bold text-brand-gold mb-2">
+                  Tech Office
+                </h4>
+                <p class="text-white text-sm md:text-base">Commercial Workspace</p>
+              </div>
+            </div>
+            <div class="swiper-slide relative group overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Urban Cafe Interior Design with Rustic Elements"
+                loading="lazy"
+                class="w-full h-[300px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center flex-col p-6 text-center"
+              >
+                <h4 class="text-xl md:text-2xl font-heading font-bold text-brand-gold mb-2">
+                  Urban Cafe
+                </h4>
+                <p class="text-white text-sm md:text-base">Hospitality Design</p>
+              </div>
+            </div>
+            <div class="swiper-slide relative group overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1617103996702-96ff29b1c467?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Minimalist Home Renovation Interior Design"
+                loading="lazy"
+                class="w-full h-[300px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center flex-col p-6 text-center"
+              >
+                <h4 class="text-xl md:text-2xl font-heading font-bold text-brand-gold mb-2">
+                  Minimalist Home
+                </h4>
+                <p class="text-white text-sm md:text-base">Residential Renovation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 md:py-20 bg-white">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h3 class="text-brand-gold font-heading font-bold text-xs md:text-sm tracking-widest uppercase mb-2">
+          Testimonials
+        </h3>
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-8 md:mb-12">
+          What Clients Say
+        </h2>
+
+        <div class="swiper testimonialSwiper">
+          <div class="swiper-wrapper">
+            <!-- Review 1 -->
+            <div class="swiper-slide px-4 md:px-12 pb-12">
+              <div class="text-lg md:text-2xl text-gray-600 italic leading-relaxed mb-6">
+                "NESTHETIC completely transformed our office. The industrial
+                chic look they achieved is exactly what we wanted but couldn't
+                articulate. Highly professional team."
+              </div>
+              <div class="flex flex-col items-center">
+                <h5 class="font-heading font-bold text-brand-dark">
+                  Arjun Das
+                </h5>
+                <span class="text-sm text-brand-gold">CEO, TechStart Ltd.</span>
+              </div>
+            </div>
+            <!-- Review 2 -->
+            <div class="swiper-slide px-4 md:px-12 pb-12">
+              <div class="text-lg md:text-2xl text-gray-600 italic leading-relaxed mb-6">
+                "Attention to detail is unmatched. They took our small apartment
+                in Barrackpore and made it feel spacious and luxurious. The
+                lighting design is superb."
+              </div>
+              <div class="flex flex-col items-center">
+                <h5 class="font-heading font-bold text-brand-dark">
+                  Priya Chatterjee
+                </h5>
+                <span class="text-sm text-brand-gold">Homeowner</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-brand-gray py-16 md:py-20 relative">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 gap-12">
+          <!-- Contact Info -->
+          <div class="reveal reveal-left">
+            <h3 class="text-brand-gold font-heading font-bold text-xs md:text-sm tracking-widest uppercase mb-2">
+              Get In Touch
+            </h3>
+            <h2 class="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6">
+              Let's Discuss Your Project
+            </h2>
+            <p class="text-gray-600 mb-8 md:mb-10 text-sm md:text-base">
+              Ready to start your design journey? Contact us for a consultation
+              or visit our registered office in Barrackpore.
+            </p>
+
+            <address class="space-y-6 not-italic">
+              <div class="flex items-start">
+                <div class="flex-shrink-0 w-12 h-12 bg-white shadow-sm flex items-center justify-center text-brand-gold text-xl rounded">
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </div>
+                <div class="ml-4">
+                  <h4 class="font-heading font-bold text-brand-dark">
+                    Registered Office
+                  </h4>
+                  <p class="text-gray-600 text-sm mt-1">
+                    Dangadhigila, Kharbagan, P.O - Bandipur,<br />
+                    Barrackpore-1, North 24 Parganas,<br />
+                    Pin-700119, West Bengal.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="flex-shrink-0 w-12 h-12 bg-white shadow-sm flex items-center justify-center text-brand-gold text-xl rounded">
+                  <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                </div>
+                <div class="ml-4">
+                  <h4 class="font-heading font-bold text-brand-dark">Phone</h4>
+                  <p class="text-gray-600 text-sm mt-1">
+                    <a href="tel:+919836804988" class="hover:text-brand-gold transition-colors">+91 9836804988</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="flex-shrink-0 w-12 h-12 bg-white shadow-sm flex items-center justify-center text-brand-gold text-xl rounded">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="ml-4">
+                  <h4 class="font-heading font-bold text-brand-dark">Email</h4>
+                  <p class="text-gray-600 text-sm mt-1">
+                    <a href="mailto:nesthetic90@gmail.com" class="hover:text-brand-gold transition-colors">nesthetic90@gmail.com</a>
+                  </p>
+                </div>
+              </div>
+            </address>
+
+            <div class="mt-8 pt-8 border-t border-gray-300">
+              <p class="text-xs text-gray-500 font-mono">
+                CIN: U43211WB2025PTC282749
+              </p>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="bg-white p-6 md:p-8 shadow-xl reveal reveal-right rounded-sm">
+            <form
+              onsubmit="event.preventDefault(); alert('Thank you! We will contact you soon.');"
+            >
+              <div class="grid grid-cols-1 gap-6">
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-1" for="name"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="w-full bg-gray-50 border border-gray-300 px-4 py-3 focus:outline-none focus:border-brand-gold transition-colors rounded-sm"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-1" for="email"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="w-full bg-gray-50 border border-gray-300 px-4 py-3 focus:outline-none focus:border-brand-gold transition-colors rounded-sm"
+                    placeholder="your@email.com"
+                    required
+                  />
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold text-gray-700 mb-1" for="message"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    class="w-full bg-gray-50 border border-gray-300 px-4 py-3 focus:outline-none focus:border-brand-gold transition-colors rounded-sm"
+                    placeholder="Tell us about your project..."
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full bg-brand-gold text-white font-heading font-bold py-4 hover:bg-brand-dark transition-colors duration-300 rounded-sm"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark text-white py-12 border-t border-gray-800">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6"
+      >
+        <div class="text-center md:text-left">
+          <h2
+            class="font-heading font-bold text-2xl tracking-widest text-white"
+          >
+            NESTHETIC
+          </h2>
+          <p class="text-gray-400 text-sm mt-2">
+            &copy; 2025 NESTHETIC Private Limited. All Rights Reserved.
+          </p>
+        </div>
+        <div class="flex space-x-6">
+          <a
+            href="#"
+            class="text-gray-400 hover:text-brand-gold transition-colors p-2"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f text-xl"></i
+          ></a>
+          <a
+            href="#"
+            class="text-gray-400 hover:text-brand-gold transition-colors p-2"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram text-xl"></i
+          ></a>
+          <a
+            href="#"
+            class="text-gray-400 hover:text-brand-gold transition-colors p-2"
+            aria-label="LinkedIn"
+            ><i class="fab fa-linkedin-in text-xl"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      // Initialize Swiper for Portfolio
+      const portfolioSwiper = new Swiper(".portfolioSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        speed: 1400,
+        grabCursor: true,
+        slideToClickedSlide: true,
+        slidesPerGroup: 1,
+        allowTouchMove: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+          reverseDirection: true,
+          pauseOnMouseEnter: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next-custom",
+          prevEl: ".swiper-button-prev-custom",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+
+      // Helper: choose autoplay delay based on viewport width.
+      const getPortfolioDelay = () => {
+        const w = window.innerWidth;
+        if (w >= 1024) return 2200; // 3 slides visible
+        if (w >= 640) return 3000; // 2 slides visible
+        return 3800; // 1 slide visible
+      };
+
+      const applyPortfolioDelay = () => {
+        const d = getPortfolioDelay();
+        portfolioSwiper.params.autoplay.delay = d;
+        try {
+          if (portfolioSwiper.autoplay.running) portfolioSwiper.autoplay.stop();
+          portfolioSwiper.autoplay.start();
+        } catch (e) {}
+      };
+
+      let _portfolioResizeTimer = null;
+      const debounceApply = () => {
+        clearTimeout(_portfolioResizeTimer);
+        _portfolioResizeTimer = setTimeout(() => applyPortfolioDelay(), 150);
+      };
+
+      applyPortfolioDelay();
+      portfolioSwiper.on("breakpoint", applyPortfolioDelay);
+      window.addEventListener("resize", debounceApply);
+
+      // Initialize Swiper for Testimonials
+      const testimonialSwiper = new Swiper(".testimonialSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+      });
+
+      // Mobile Menu Toggle
+      const menuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("open");
+      });
+
+      // Smooth Scroll & Navbar behavior
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+            mobileMenu.classList.remove("open"); // Close mobile menu on click
+            targetElement.scrollIntoView({
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // Reveal Animations on Scroll
+      const revealElements = document.querySelectorAll(".reveal");
+
+      const revealOnScroll = () => {
+        const windowHeight = window.innerHeight;
+        const elementVisible = 100;
+
+        revealElements.forEach((reveal) => {
+          const elementTop = reveal.getBoundingClientRect().top;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveal.classList.add("active");
+          } else {
+            reveal.classList.remove("active");
+          }
+        });
+      };
+
+      window.addEventListener("scroll", revealOnScroll);
+      revealOnScroll();
+
+      // Navbar Background on Scroll
+      const navbar = document.getElementById("navbar");
+      const navbarContainer = document.getElementById("navbar-container");
+      
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("shadow-lg");
+          // On mobile we might want to keep it smaller or consistent
+          // Resetting heights to base Tailwind classes handled via state
+          navbarContainer.classList.remove("md:h-24");
+          navbarContainer.classList.add("md:h-20");
+        } else {
+          navbar.classList.remove("shadow-lg");
+          navbarContainer.classList.remove("md:h-20");
+          navbarContainer.classList.add("md:h-24");
+        }
+      });
+
+      const portfolioSwiperEl = document.querySelector(".portfolioSwiper");
+      portfolioSwiperEl.addEventListener("mouseenter", () => {
+        portfolioSwiper.autoplay.stop();
+      });
+      portfolioSwiperEl.addEventListener("mouseleave", () => {
+        portfolioSwiper.autoplay.start();
+      });
+    </script>
+  </body>
+</html>
