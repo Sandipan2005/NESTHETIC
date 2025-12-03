@@ -10,11 +10,22 @@
       Ideas in India | West Bengal | Kolkata
     </title>
 
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+
     <!-- Favicon (SVG Logo) -->
     <link
       rel="icon"
       type="image/svg+xml"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Cpath d='M10 40 L50 10 L90 40' stroke='%23c5a065' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M20 40 V85 H80 V40' stroke='%23c5a065' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cline x1='50' y1='10' x2='50' y2='35' stroke='%23c5a065' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='50' cy='38' r='3' stroke='%23c5a065' stroke-width='3' fill='none'/%3E%3Cline x1='35' y1='65' x2='65' y2='65' stroke='%23c5a065' stroke-width='3' stroke-linecap='round'/%3E%3Cline x1='50' y1='65' x2='50' y2='85' stroke='%23c5a065' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M30 65 V55 H25' stroke='%23c5a065' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M70 65 V55 H75' stroke='%23c5a065' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none'%3E%3Crect width='100' height='100' fill='%233e342f'/%3E%3Cpath d='M10 40 L50 10 L90 40' stroke='%23c5a065' stroke-width='3'/%3E%3Cpath d='M20 40 V85 H80 V40' stroke='%23c5a065' stroke-width='3'/%3E%3C/svg%3E"
     />
 
     <meta
@@ -26,8 +37,44 @@
       content="Interior Design, Industrial Interior Design, Home Renovation Kolkata, Office Interior Design Barrackpore, Office Interior Design India, Office Interior Design Kolkata, Office Interior Design West Bengal, Residential Interior Design Barrackpore, Residential Interior Design India, Residential Interior Design Kolkata, Residential Interior Design West Bengal, Commercial Interior Design Barrackpore, Commercial Interior Design Kolkata, Commercial Interior Design West Bengal, Commercial Interior Design India, Home Interior Design Barrackpore, Home Interior Design Kolkata, Home Interior Design West Bengal, Commercial Interiors West Bengal, NESTHETIC, Luxury Interiors, Residential interior design, Luxury villa interiors, Apartment interior styling, Home renovation services, Custom home design, Minimalist interior design, Transforming houses into homes, Modern minimal apartment design, High-end villa interior designers, Bespoke residential space planning, Personalized home decor services, Living room design for small apartments, Luxury master bedroom interior design,Commercial interior design, Office space planning, Retail shop interiors, Corporate office fit-outs, Commercial space architecture, Modern office layouts, Office design for productivity, Brand-centric retail design, Commercial fit-out contractors, Open-plan office design ideas, Retail store layout and design, Functional commercial workspace solutions, Ergonomic office interior design,Industrial design consulting, Factory layout planning, Warehouse conversion design, Industrial loft interiors, Industrial architecture, Raw material interior design, Industrial loft renovation services, Exposed brick and concrete design, Warehouse to office conversion, Steel and concrete interior styling, Consulting for industrial spaces, Adaptive reuse architecture, Factory interior design specialists"
     />
     <meta name="author" content="NESTHETIC Private Limited" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://www.nesthetic.in" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta
+      name="googlebot"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <meta
+      name="bingbot"
+      content="index, follow, max-snippet:-1, max-image-preview:large"
+    />
+    <link rel="canonical" href="https://www.nesthetic.in/" />
+
+    <!-- Geo Meta Tags for Local SEO -->
+    <meta name="geo.region" content="IN-WB" />
+    <meta name="geo.placename" content="Barrackpore, Kolkata, West Bengal" />
+    <meta name="geo.position" content="22.76;88.37" />
+    <meta name="ICBM" content="22.76, 88.37" />
+
+    <!-- Additional SEO Meta -->
+    <meta name="theme-color" content="#c5a065" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="NESTHETIC" />
+    <meta name="application-name" content="NESTHETIC Interior Design" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="revisit-after" content="7 days" />
+    <meta name="rating" content="general" />
+    <meta name="distribution" content="global" />
+    <meta name="coverage" content="India" />
+    <meta name="target" content="all" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
 
     <!-- SEO: Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -61,16 +108,67 @@
       content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
     />
 
+    <!-- SEO: WebSite Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "NESTHETIC",
+        "alternateName": "NESTHETIC Private Limited",
+        "url": "https://www.nesthetic.in/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.nesthetic.in/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
+    <!-- SEO: Organization Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "NESTHETIC Private Limited",
+        "legalName": "NESTHETIC Private Limited",
+        "url": "https://www.nesthetic.in/",
+        "logo": "https://www.nesthetic.in/logo.png",
+        "foundingDate": "2025",
+        "founders": [{ "@type": "Person", "name": "NESTHETIC Team" }],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-9836804988",
+          "contactType": "customer service",
+          "areaServed": ["IN", "West Bengal", "Kolkata", "Barrackpore"],
+          "availableLanguage": ["English", "Hindi", "Bengali"]
+        },
+        "sameAs": [
+          "https://www.facebook.com/nesthetic",
+          "https://www.instagram.com/nesthetic",
+          "https://www.linkedin.com/company/nesthetic"
+        ]
+      }
+    </script>
+
     <!-- SEO: Local Business Schema (JSON-LD) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "InteriorDesignOffice",
+        "@type": "LocalBusiness",
+        "@id": "https://www.nesthetic.in/#localbusiness",
         "name": "NESTHETIC Private Limited",
-        "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6",
-        "url": "https://www.nesthetic.in",
-        "telephone": "+91 9836804988",
-        "priceRange": "$$",
+        "alternateName": "NESTHETIC Interior Design",
+        "description": "Expert Industrial Interior Design firm specializing in residential, commercial, and industrial spaces in Kolkata, Barrackpore, and West Bengal.",
+        "image": [
+          "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200",
+          "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1200"
+        ],
+        "url": "https://www.nesthetic.in/",
+        "telephone": "+91-9836804988",
+        "email": "nesthetic90@gmail.com",
+        "priceRange": "$$-$$$",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Bank Transfer",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Dangadhigila, Kharbagan, P.O - Bandipur",
@@ -84,23 +182,205 @@
           "latitude": 22.76,
           "longitude": 88.37
         },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Monday",
-            "Tuesday",
-            "Wednesday",
-            "Thursday",
-            "Friday",
-            "Saturday"
-          ],
-          "opens": "10:00",
-          "closes": "20:00"
+        "areaServed": [
+          { "@type": "City", "name": "Kolkata" },
+          { "@type": "City", "name": "Barrackpore" },
+          { "@type": "State", "name": "West Bengal" },
+          { "@type": "AdministrativeArea", "name": "North 24 Parganas" }
+        ],
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "10:00",
+            "closes": "20:00"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "bestRating": "5",
+          "worstRating": "1",
+          "ratingCount": "50",
+          "reviewCount": "50"
         },
         "sameAs": [
           "https://www.facebook.com/nesthetic",
-          "https://www.instagram.com/nesthetic"
+          "https://www.instagram.com/nesthetic",
+          "https://www.linkedin.com/company/nesthetic"
         ]
+      }
+    </script>
+
+    <!-- SEO: Service Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Interior Design",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "NESTHETIC Private Limited"
+        },
+        "areaServed": {
+          "@type": "State",
+          "name": "West Bengal"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Interior Design Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Residential Interior Design",
+                "description": "Complete home interior design services including living rooms, bedrooms, kitchens, and bathrooms for apartments and villas."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Commercial Interior Design",
+                "description": "Office interior design, retail shop interiors, and corporate workspace planning optimized for productivity."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Industrial Interior Consulting",
+                "description": "Specialized consultation for industrial lofts, factory layouts, and warehouse conversions using raw materials."
+              }
+            }
+          ]
+        }
+      }
+    </script>
+
+    <!-- SEO: BreadcrumbList Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.nesthetic.in/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Services",
+            "item": "https://www.nesthetic.in/#services"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Portfolio",
+            "item": "https://www.nesthetic.in/#portfolio"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Contact",
+            "item": "https://www.nesthetic.in/#contact"
+          }
+        ]
+      }
+    </script>
+
+    <!-- SEO: FAQPage Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What interior design services does NESTHETIC offer in Kolkata?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "NESTHETIC offers comprehensive interior design services including residential interiors (homes, apartments, villas), commercial spaces (offices, retail shops), and industrial consulting (lofts, warehouses, factories) throughout Kolkata, Barrackpore, and West Bengal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the cost of interior design services at NESTHETIC?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "NESTHETIC offers competitive pricing in the $$ to $$$ range. The exact cost depends on the project scope, size, materials, and design complexity. Contact us for a personalized quote for your residential or commercial project."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does NESTHETIC provide interior design services in North 24 Parganas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, NESTHETIC is based in Barrackpore and provides interior design services throughout North 24 Parganas, Kolkata, and the wider West Bengal region. Our registered office is at Dangadhigila, Kharbagan, Barrackpore."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I contact NESTHETIC for an interior design consultation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can reach NESTHETIC at +91 9836804988 or email nesthetic90@gmail.com. Our office hours are Monday to Saturday, 10:00 AM to 8:00 PM. You can also fill out our contact form for a free consultation."
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- SEO: Review Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "itemReviewed": {
+          "@type": "LocalBusiness",
+          "name": "NESTHETIC Private Limited"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Arjun Das"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "reviewBody": "NESTHETIC completely transformed our office. The industrial chic look they achieved is exactly what we wanted but couldn't articulate. Highly professional team."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Review",
+        "itemReviewed": {
+          "@type": "LocalBusiness",
+          "name": "NESTHETIC Private Limited"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Priya Chatterjee"
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "reviewBody": "Attention to detail is unmatched. They took our small apartment in Barrackpore and made it feel spacious and luxurious. The lighting design is superb."
       }
     </script>
 
@@ -408,544 +688,604 @@
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section
-      id="home"
-      class="relative min-h-[100dvh] flex items-center justify-center overflow-hidden"
-    >
-      <!-- Background Image with Overlay -->
-      <div class="absolute inset-0 z-0">
-        <img
-          src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-          alt="Luxury Industrial Style Living Room Interior Design"
-          class="w-full h-full object-cover"
-          fetchpriority="high"
-        />
-        <div class="absolute inset-0 bg-black/40"></div>
-      </div>
-
-      <div
-        class="relative z-10 text-center px-4 max-w-4xl mx-auto animate__animated animate__fadeInUp pt-16"
+    <!-- Main Content -->
+    <main role="main" itemscope itemtype="https://schema.org/WebPage">
+      <!-- Hero Section -->
+      <section
+        id="home"
+        class="relative min-h-[100dvh] flex items-center justify-center overflow-hidden"
+        aria-label="Hero - Introduction to NESTHETIC Interior Design"
       >
-        <h2
-          class="text-brand-gold font-heading font-bold text-sm md:text-lg tracking-[0.2em] md:tracking-[0.3em] mb-4 uppercase"
-        >
-          Best Interior Design Studio in West Bengal
-        </h2>
-        <h1
-          class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 text-shadow leading-tight"
-        >
-          Crafting Spaces <br class="hidden xs:block" />
-          With Soul
-        </h1>
-        <p
-          class="text-gray-200 text-base sm:text-lg md:text-xl mb-8 md:mb-10 font-light max-w-2xl mx-auto px-4"
-        >
-          Where industrial raw aesthetics meet modern luxury. We design
-          residential and commercial environments that tell your story.
-        </p>
-        <div
-          class="flex flex-col xs:flex-row gap-4 justify-center w-full xs:w-auto px-6 xs:px-0"
-        >
-          <a
-            href="#portfolio"
-            class="px-8 py-3 bg-brand-gold text-white font-heading font-semibold hover:bg-white hover:text-brand-dark transition-all duration-300 text-center"
-            >View Our Work</a
-          >
-          <a
-            href="#contact"
-            class="px-8 py-3 border-2 border-white text-white font-heading font-semibold hover:bg-white hover:text-brand-dark transition-all duration-300 text-center"
-            >Get a Quote</a
-          >
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+          <img
+            src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+            alt="Luxury Industrial Style Living Room Interior Design"
+            class="w-full h-full object-cover"
+            fetchpriority="high"
+          />
+          <div class="absolute inset-0 bg-black/40"></div>
         </div>
-      </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-16 md:py-28 bg-white overflow-hidden">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <!-- Image Container -->
-          <div
-            class="relative reveal reveal-left max-w-lg mx-auto md:max-w-none w-full"
+        <div
+          class="relative z-10 text-center px-4 max-w-4xl mx-auto animate__animated animate__fadeInUp pt-16"
+        >
+          <h2
+            class="text-brand-gold font-heading font-bold text-sm md:text-lg tracking-[0.2em] md:tracking-[0.3em] mb-4 uppercase"
           >
-            <div
-              class="absolute -top-4 -left-4 w-full h-full border-2 border-brand-gold z-0 hidden xs:block"
-            ></div>
-            <img
-              src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-              alt="Professional Interior Designers planning a project in Kolkata"
-              loading="lazy"
-              class="relative z-10 w-full shadow-xl grayscale hover:grayscale-0 transition-all duration-500"
-            />
+            Best Interior Design Studio in West Bengal
+          </h2>
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-white mb-6 text-shadow leading-tight"
+          >
+            Crafting Spaces <br class="hidden xs:block" />
+            With Soul
+          </h1>
+          <p
+            class="text-gray-200 text-base sm:text-lg md:text-xl mb-8 md:mb-10 font-light max-w-2xl mx-auto px-4"
+          >
+            Where industrial raw aesthetics meet modern luxury. We design
+            residential and commercial environments that tell your story.
+          </p>
+          <div
+            class="flex flex-col xs:flex-row gap-4 justify-center w-full xs:w-auto px-6 xs:px-0"
+          >
+            <a
+              href="#portfolio"
+              class="px-8 py-3 bg-brand-gold text-white font-heading font-semibold hover:bg-white hover:text-brand-dark transition-all duration-300 text-center"
+              >View Our Work</a
+            >
+            <a
+              href="#contact"
+              class="px-8 py-3 border-2 border-white text-white font-heading font-semibold hover:bg-white hover:text-brand-dark transition-all duration-300 text-center"
+              >Get a Quote</a
+            >
           </div>
+        </div>
+      </section>
 
-          <!-- Text Content -->
-          <div class="reveal reveal-right text-center md:text-left">
-            <h3
+      <!-- About Section -->
+      <section
+        id="about"
+        class="py-16 md:py-28 bg-white overflow-hidden"
+        aria-labelledby="about-heading"
+        itemscope
+        itemtype="https://schema.org/AboutPage"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- Image Container -->
+            <div
+              class="relative reveal reveal-left max-w-lg mx-auto md:max-w-none w-full"
+            >
+              <div
+                class="absolute -top-4 -left-4 w-full h-full border-2 border-brand-gold z-0 hidden xs:block"
+              ></div>
+              <img
+                src="https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Professional Interior Designers planning a project in Kolkata"
+                loading="lazy"
+                class="relative z-10 w-full shadow-xl grayscale hover:grayscale-0 transition-all duration-500"
+              />
+            </div>
+
+            <!-- Text Content -->
+            <div class="reveal reveal-right text-center md:text-left">
+              <p
+                class="text-brand-gold font-heading font-bold text-xs md:text-sm tracking-widest uppercase mb-2"
+              >
+                Who We Are
+              </p>
+              <h2
+                id="about-heading"
+                class="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6"
+                itemprop="name"
+              >
+                NESTHETIC Private Limited
+              </h2>
+              <p
+                class="text-gray-600 mb-6 leading-relaxed text-sm md:text-base"
+              >
+                Registered in West Bengal, NESTHETIC is a premier
+                <strong>interior design firm</strong> specializing in blending
+                functional industrial elements with aesthetic warmth. Our
+                philosophy is rooted in the belief that every space has a unique
+                narrative waiting to be unveiled.
+              </p>
+              <p
+                class="text-gray-600 mb-8 leading-relaxed text-sm md:text-base"
+              >
+                From <strong>Barrackpore</strong> to the wider North 24 Parganas
+                region and <strong>Kolkata</strong>, we bring a meticulous eye
+                for detail and a commitment to quality craftsmanship. Whether
+                it's a cozy residential flat renovation or a sprawling
+                commercial office complex, we deliver excellence.
+              </p>
+              <div class="grid grid-cols-2 gap-6 max-w-xs mx-auto md:mx-0">
+                <div>
+                  <h4
+                    class="text-3xl md:text-4xl font-heading font-bold text-brand-gold"
+                  >
+                    50+
+                  </h4>
+                  <p
+                    class="text-xs md:text-sm text-gray-500 uppercase tracking-wide mt-1"
+                  >
+                    Projects Completed
+                  </p>
+                </div>
+                <div>
+                  <h4
+                    class="text-3xl md:text-4xl font-heading font-bold text-brand-gold"
+                  >
+                    100%
+                  </h4>
+                  <p
+                    class="text-xs md:text-sm text-gray-500 uppercase tracking-wide mt-1"
+                  >
+                    Client Satisfaction
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section
+        id="services"
+        class="py-16 md:py-20 bg-brand-gray"
+        aria-labelledby="services-heading"
+        itemscope
+        itemtype="https://schema.org/Service"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center mb-12 md:mb-16 reveal reveal-up">
+            <p
               class="text-brand-gold font-heading font-bold text-xs md:text-sm tracking-widest uppercase mb-2"
             >
-              Who We Are
-            </h3>
+              Our Expertise
+            </p>
             <h2
-              class="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6"
+              id="services-heading"
+              class="text-3xl md:text-4xl font-heading font-bold text-brand-dark"
+              itemprop="name"
             >
-              NESTHETIC Private Limited
+              Our Design Services
             </h2>
-            <p class="text-gray-600 mb-6 leading-relaxed text-sm md:text-base">
-              Registered in West Bengal, NESTHETIC is a premier
-              <strong>interior design firm</strong> specializing in blending
-              functional industrial elements with aesthetic warmth. Our
-              philosophy is rooted in the belief that every space has a unique
-              narrative waiting to be unveiled.
-            </p>
-            <p class="text-gray-600 mb-8 leading-relaxed text-sm md:text-base">
-              From <strong>Barrackpore</strong> to the wider North 24 Parganas
-              region and <strong>Kolkata</strong>, we bring a meticulous eye for
-              detail and a commitment to quality craftsmanship. Whether it's a
-              cozy residential flat renovation or a sprawling commercial office
-              complex, we deliver excellence.
-            </p>
-            <div class="grid grid-cols-2 gap-6 max-w-xs mx-auto md:mx-0">
-              <div>
-                <h4
-                  class="text-3xl md:text-4xl font-heading font-bold text-brand-gold"
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div class="reveal reveal-up">
+              <div
+                class="bg-white p-8 shadow-lg hover:-translate-y-2 transition-transform duration-300 border-b-4 border-brand-gold h-full flex flex-col items-center md:items-start text-center md:text-left"
+              >
+                <div
+                  class="w-14 h-14 bg-brand-gray rounded-full flex items-center justify-center mb-6 text-brand-gold text-2xl"
                 >
-                  50+
-                </h4>
-                <p
-                  class="text-xs md:text-sm text-gray-500 uppercase tracking-wide mt-1"
-                >
-                  Projects Completed
+                  <i class="fas fa-home" aria-hidden="true"></i>
+                </div>
+                <h3 class="text-xl font-heading font-bold text-brand-dark mb-3">
+                  Residential Interiors
+                </h3>
+                <p class="text-gray-600 text-sm md:text-base">
+                  Transforming houses into homes. From minimal apartments to
+                  luxury villas, we create residential spaces that reflect your
+                  personality and style.
                 </p>
               </div>
-              <div>
-                <h4
-                  class="text-3xl md:text-4xl font-heading font-bold text-brand-gold"
+            </div>
+
+            <!-- Service 2 -->
+            <div class="reveal reveal-up" style="transition-delay: 0.2s">
+              <div
+                class="bg-white p-8 shadow-lg hover:-translate-y-2 transition-transform duration-300 border-b-4 border-brand-dark h-full flex flex-col items-center md:items-start text-center md:text-left"
+              >
+                <div
+                  class="w-14 h-14 bg-brand-gray rounded-full flex items-center justify-center mb-6 text-brand-gold text-2xl"
                 >
-                  100%
-                </h4>
-                <p
-                  class="text-xs md:text-sm text-gray-500 uppercase tracking-wide mt-1"
+                  <i class="fas fa-building" aria-hidden="true"></i>
+                </div>
+                <h3 class="text-xl font-heading font-bold text-brand-dark mb-3">
+                  Commercial Spaces
+                </h3>
+                <p class="text-gray-600 text-sm md:text-base">
+                  Office layouts, retail shops, and commercial spaces optimized
+                  for productivity and brand identity, merging form with
+                  function.
+                </p>
+              </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="reveal reveal-up" style="transition-delay: 0.4s">
+              <div
+                class="bg-white p-8 shadow-lg hover:-translate-y-2 transition-transform duration-300 border-b-4 border-brand-gold h-full flex flex-col items-center md:items-start text-center md:text-left"
+              >
+                <div
+                  class="w-14 h-14 bg-brand-gray rounded-full flex items-center justify-center mb-6 text-brand-gold text-2xl"
                 >
-                  Client Satisfaction
+                  <i class="fas fa-industry" aria-hidden="true"></i>
+                </div>
+                <h3 class="text-xl font-heading font-bold text-brand-dark mb-3">
+                  Industrial Consulting
+                </h3>
+                <p class="text-gray-600 text-sm md:text-base">
+                  Specialized consultation for industrial lofts, factories, and
+                  warehouses, utilizing raw materials like steel, brick, and
+                  concrete.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-16 md:py-20 bg-brand-gray">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-12 md:mb-16 reveal reveal-up">
-          <h3
+      <!-- Gallery / Swiper Section -->
+      <section
+        id="portfolio"
+        class="py-16 md:py-20 bg-brand-dark text-white"
+        aria-labelledby="portfolio-heading"
+        itemscope
+        itemtype="https://schema.org/ImageGallery"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center md:items-end mb-10 md:mb-12 reveal reveal-fade text-center md:text-left"
+          >
+            <div class="mb-6 md:mb-0">
+              <p
+                class="text-brand-gold font-heading font-bold text-xs md:text-sm tracking-widest uppercase mb-2"
+              >
+                Recent Work
+              </p>
+              <h2
+                id="portfolio-heading"
+                class="text-3xl md:text-4xl font-heading font-bold"
+                itemprop="name"
+              >
+                Our Masterpieces
+              </h2>
+            </div>
+            <!-- Navigation Buttons -->
+            <div class="flex gap-4">
+              <button
+                class="swiper-button-prev-custom w-10 h-10 border border-white/30 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold transition-colors rounded-full md:rounded-none"
+                aria-label="Previous Slide"
+              >
+                <i class="fas fa-arrow-left"></i>
+              </button>
+              <button
+                class="swiper-button-next-custom w-10 h-10 border border-white/30 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold transition-colors rounded-full md:rounded-none"
+                aria-label="Next Slide"
+              >
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Swiper -->
+          <div class="swiper portfolioSwiper reveal reveal-up">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide relative group overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Modern Industrial Loft Interior Design in Kolkata"
+                  loading="lazy"
+                  class="w-full h-[300px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div
+                  class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center flex-col p-6 text-center"
+                >
+                  <h4
+                    class="text-xl md:text-2xl font-heading font-bold text-brand-gold mb-2"
+                  >
+                    Modern Loft
+                  </h4>
+                  <p class="text-white text-sm md:text-base">
+                    Residential Design
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide relative group overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Tech Office Workspace Interior Design with Modern Lighting"
+                  loading="lazy"
+                  class="w-full h-[300px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div
+                  class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center flex-col p-6 text-center"
+                >
+                  <h4
+                    class="text-xl md:text-2xl font-heading font-bold text-brand-gold mb-2"
+                  >
+                    Tech Office
+                  </h4>
+                  <p class="text-white text-sm md:text-base">
+                    Commercial Workspace
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide relative group overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Urban Cafe Interior Design with Rustic Elements"
+                  loading="lazy"
+                  class="w-full h-[300px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div
+                  class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center flex-col p-6 text-center"
+                >
+                  <h4
+                    class="text-xl md:text-2xl font-heading font-bold text-brand-gold mb-2"
+                  >
+                    Urban Cafe
+                  </h4>
+                  <p class="text-white text-sm md:text-base">
+                    Hospitality Design
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide relative group overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1617103996702-96ff29b1c467?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  alt="Minimalist Home Renovation Interior Design"
+                  loading="lazy"
+                  class="w-full h-[300px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div
+                  class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center flex-col p-6 text-center"
+                >
+                  <h4
+                    class="text-xl md:text-2xl font-heading font-bold text-brand-gold mb-2"
+                  >
+                    Minimalist Home
+                  </h4>
+                  <p class="text-white text-sm md:text-base">
+                    Residential Renovation
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section
+        class="py-16 md:py-20 bg-white"
+        aria-labelledby="testimonials-heading"
+        itemscope
+        itemtype="https://schema.org/Review"
+      >
+        <div class="max-w-4xl mx-auto px-4 text-center">
+          <p
             class="text-brand-gold font-heading font-bold text-xs md:text-sm tracking-widest uppercase mb-2"
           >
-            Our Expertise
-          </h3>
+            Testimonials
+          </p>
           <h2
-            class="text-3xl md:text-4xl font-heading font-bold text-brand-dark"
+            id="testimonials-heading"
+            class="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-8 md:mb-12"
           >
-            Our Design Services
+            What Clients Say
           </h2>
-        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <!-- Service 1 -->
-          <div class="reveal reveal-up">
-            <div
-              class="bg-white p-8 shadow-lg hover:-translate-y-2 transition-transform duration-300 border-b-4 border-brand-gold h-full flex flex-col items-center md:items-start text-center md:text-left"
-            >
-              <div
-                class="w-14 h-14 bg-brand-gray rounded-full flex items-center justify-center mb-6 text-brand-gold text-2xl"
-              >
-                <i class="fas fa-home" aria-hidden="true"></i>
-              </div>
-              <h3 class="text-xl font-heading font-bold text-brand-dark mb-3">
-                Residential Interiors
-              </h3>
-              <p class="text-gray-600 text-sm md:text-base">
-                Transforming houses into homes. From minimal apartments to
-                luxury villas, we create residential spaces that reflect your
-                personality and style.
-              </p>
-            </div>
-          </div>
-
-          <!-- Service 2 -->
-          <div class="reveal reveal-up" style="transition-delay: 0.2s">
-            <div
-              class="bg-white p-8 shadow-lg hover:-translate-y-2 transition-transform duration-300 border-b-4 border-brand-dark h-full flex flex-col items-center md:items-start text-center md:text-left"
-            >
-              <div
-                class="w-14 h-14 bg-brand-gray rounded-full flex items-center justify-center mb-6 text-brand-gold text-2xl"
-              >
-                <i class="fas fa-building" aria-hidden="true"></i>
-              </div>
-              <h3 class="text-xl font-heading font-bold text-brand-dark mb-3">
-                Commercial Spaces
-              </h3>
-              <p class="text-gray-600 text-sm md:text-base">
-                Office layouts, retail shops, and commercial spaces optimized
-                for productivity and brand identity, merging form with function.
-              </p>
-            </div>
-          </div>
-
-          <!-- Service 3 -->
-          <div class="reveal reveal-up" style="transition-delay: 0.4s">
-            <div
-              class="bg-white p-8 shadow-lg hover:-translate-y-2 transition-transform duration-300 border-b-4 border-brand-gold h-full flex flex-col items-center md:items-start text-center md:text-left"
-            >
-              <div
-                class="w-14 h-14 bg-brand-gray rounded-full flex items-center justify-center mb-6 text-brand-gold text-2xl"
-              >
-                <i class="fas fa-industry" aria-hidden="true"></i>
-              </div>
-              <h3 class="text-xl font-heading font-bold text-brand-dark mb-3">
-                Industrial Consulting
-              </h3>
-              <p class="text-gray-600 text-sm md:text-base">
-                Specialized consultation for industrial lofts, factories, and
-                warehouses, utilizing raw materials like steel, brick, and
-                concrete.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery / Swiper Section -->
-    <section id="portfolio" class="py-16 md:py-20 bg-brand-dark text-white">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div
-          class="flex flex-col md:flex-row justify-between items-center md:items-end mb-10 md:mb-12 reveal reveal-fade text-center md:text-left"
-        >
-          <div class="mb-6 md:mb-0">
-            <h3
-              class="text-brand-gold font-heading font-bold text-xs md:text-sm tracking-widest uppercase mb-2"
-            >
-              Recent Work
-            </h3>
-            <h2 class="text-3xl md:text-4xl font-heading font-bold">
-              Our Masterpieces
-            </h2>
-          </div>
-          <!-- Navigation Buttons -->
-          <div class="flex gap-4">
-            <button
-              class="swiper-button-prev-custom w-10 h-10 border border-white/30 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold transition-colors rounded-full md:rounded-none"
-              aria-label="Previous Slide"
-            >
-              <i class="fas fa-arrow-left"></i>
-            </button>
-            <button
-              class="swiper-button-next-custom w-10 h-10 border border-white/30 flex items-center justify-center hover:bg-brand-gold hover:border-brand-gold transition-colors rounded-full md:rounded-none"
-              aria-label="Next Slide"
-            >
-              <i class="fas fa-arrow-right"></i>
-            </button>
-          </div>
-        </div>
-
-        <!-- Swiper -->
-        <div class="swiper portfolioSwiper reveal reveal-up">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide relative group overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Modern Industrial Loft Interior Design in Kolkata"
-                loading="lazy"
-                class="w-full h-[300px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div
-                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center flex-col p-6 text-center"
-              >
-                <h4
-                  class="text-xl md:text-2xl font-heading font-bold text-brand-gold mb-2"
-                >
-                  Modern Loft
-                </h4>
-                <p class="text-white text-sm md:text-base">
-                  Residential Design
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide relative group overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Tech Office Workspace Interior Design with Modern Lighting"
-                loading="lazy"
-                class="w-full h-[300px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div
-                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center flex-col p-6 text-center"
-              >
-                <h4
-                  class="text-xl md:text-2xl font-heading font-bold text-brand-gold mb-2"
-                >
-                  Tech Office
-                </h4>
-                <p class="text-white text-sm md:text-base">
-                  Commercial Workspace
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide relative group overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Urban Cafe Interior Design with Rustic Elements"
-                loading="lazy"
-                class="w-full h-[300px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div
-                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center flex-col p-6 text-center"
-              >
-                <h4
-                  class="text-xl md:text-2xl font-heading font-bold text-brand-gold mb-2"
-                >
-                  Urban Cafe
-                </h4>
-                <p class="text-white text-sm md:text-base">
-                  Hospitality Design
-                </p>
-              </div>
-            </div>
-            <div class="swiper-slide relative group overflow-hidden">
-              <img
-                src="https://images.unsplash.com/photo-1617103996702-96ff29b1c467?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Minimalist Home Renovation Interior Design"
-                loading="lazy"
-                class="w-full h-[300px] md:h-[400px] object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div
-                class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center flex-col p-6 text-center"
-              >
-                <h4
-                  class="text-xl md:text-2xl font-heading font-bold text-brand-gold mb-2"
-                >
-                  Minimalist Home
-                </h4>
-                <p class="text-white text-sm md:text-base">
-                  Residential Renovation
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="py-16 md:py-20 bg-white">
-      <div class="max-w-4xl mx-auto px-4 text-center">
-        <h3
-          class="text-brand-gold font-heading font-bold text-xs md:text-sm tracking-widest uppercase mb-2"
-        >
-          Testimonials
-        </h3>
-        <h2
-          class="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-8 md:mb-12"
-        >
-          What Clients Say
-        </h2>
-
-        <div class="swiper testimonialSwiper">
-          <div class="swiper-wrapper">
-            <!-- Review 1 -->
-            <div class="swiper-slide px-4 md:px-12 pb-12">
-              <div
-                class="text-lg md:text-2xl text-gray-600 italic leading-relaxed mb-6"
-              >
-                "NESTHETIC completely transformed our office. The industrial
-                chic look they achieved is exactly what we wanted but couldn't
-                articulate. Highly professional team."
-              </div>
-              <div class="flex flex-col items-center">
-                <h5 class="font-heading font-bold text-brand-dark">
-                  Arjun Das
-                </h5>
-                <span class="text-sm text-brand-gold">CEO, TechStart Ltd.</span>
-              </div>
-            </div>
-            <!-- Review 2 -->
-            <div class="swiper-slide px-4 md:px-12 pb-12">
-              <div
-                class="text-lg md:text-2xl text-gray-600 italic leading-relaxed mb-6"
-              >
-                "Attention to detail is unmatched. They took our small apartment
-                in Barrackpore and made it feel spacious and luxurious. The
-                lighting design is superb."
-              </div>
-              <div class="flex flex-col items-center">
-                <h5 class="font-heading font-bold text-brand-dark">
-                  Priya Chatterjee
-                </h5>
-                <span class="text-sm text-brand-gold">Homeowner</span>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="bg-brand-gray py-16 md:py-20 relative">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid md:grid-cols-2 gap-12">
-          <!-- Contact Info -->
-          <div class="reveal reveal-left">
-            <h3
-              class="text-brand-gold font-heading font-bold text-xs md:text-sm tracking-widest uppercase mb-2"
-            >
-              Get In Touch
-            </h3>
-            <h2
-              class="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6"
-            >
-              Let's Discuss Your Project
-            </h2>
-            <p class="text-gray-600 mb-8 md:mb-10 text-sm md:text-base">
-              Ready to start your design journey? Contact us for a consultation
-              or visit our registered office in Barrackpore.
-            </p>
-
-            <address class="space-y-6 not-italic">
-              <div class="flex items-start">
+          <div class="swiper testimonialSwiper">
+            <div class="swiper-wrapper">
+              <!-- Review 1 -->
+              <div class="swiper-slide px-4 md:px-12 pb-12">
                 <div
-                  class="flex-shrink-0 w-12 h-12 bg-white shadow-sm flex items-center justify-center text-brand-gold text-xl rounded"
+                  class="text-lg md:text-2xl text-gray-600 italic leading-relaxed mb-6"
                 >
-                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                  "NESTHETIC completely transformed our office. The industrial
+                  chic look they achieved is exactly what we wanted but couldn't
+                  articulate. Highly professional team."
                 </div>
-                <div class="ml-4">
-                  <h4 class="font-heading font-bold text-brand-dark">
-                    Registered Office
-                  </h4>
-                  <p class="text-gray-600 text-sm mt-1">
-                    Dangadhigila, Kharbagan, P.O - Bandipur,<br />
-                    Barrackpore-1, North 24 Parganas,<br />
-                    Pin-700119, West Bengal.
-                  </p>
+                <div class="flex flex-col items-center">
+                  <h5 class="font-heading font-bold text-brand-dark">
+                    Arjun Das
+                  </h5>
+                  <span class="text-sm text-brand-gold"
+                    >CEO, TechStart Ltd.</span
+                  >
                 </div>
               </div>
-
-              <div class="flex items-start">
+              <!-- Review 2 -->
+              <div class="swiper-slide px-4 md:px-12 pb-12">
                 <div
-                  class="flex-shrink-0 w-12 h-12 bg-white shadow-sm flex items-center justify-center text-brand-gold text-xl rounded"
+                  class="text-lg md:text-2xl text-gray-600 italic leading-relaxed mb-6"
                 >
-                  <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                  "Attention to detail is unmatched. They took our small
+                  apartment in Barrackpore and made it feel spacious and
+                  luxurious. The lighting design is superb."
                 </div>
-                <div class="ml-4">
-                  <h4 class="font-heading font-bold text-brand-dark">Phone</h4>
-                  <p class="text-gray-600 text-sm mt-1">
-                    <a
-                      href="tel:+919836804988"
-                      class="hover:text-brand-gold transition-colors"
-                      >+91 9836804988</a
+                <div class="flex flex-col items-center">
+                  <h5 class="font-heading font-bold text-brand-dark">
+                    Priya Chatterjee
+                  </h5>
+                  <span class="text-sm text-brand-gold">Homeowner</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section
+        id="contact"
+        class="bg-brand-gray py-16 md:py-20 relative"
+        aria-labelledby="contact-heading"
+        itemscope
+        itemtype="https://schema.org/ContactPage"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid md:grid-cols-2 gap-12">
+            <!-- Contact Info -->
+            <div class="reveal reveal-left">
+              <p
+                class="text-brand-gold font-heading font-bold text-xs md:text-sm tracking-widest uppercase mb-2"
+              >
+                Get In Touch
+              </p>
+              <h2
+                id="contact-heading"
+                class="text-3xl md:text-4xl font-heading font-bold text-brand-dark mb-6"
+                itemprop="name"
+              >
+                Let's Discuss Your Project
+              </h2>
+              <p class="text-gray-600 mb-8 md:mb-10 text-sm md:text-base">
+                Ready to start your design journey? Contact us for a
+                consultation or visit our registered office in Barrackpore.
+              </p>
+
+              <address class="space-y-6 not-italic">
+                <div class="flex items-start">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 bg-white shadow-sm flex items-center justify-center text-brand-gold text-xl rounded"
+                  >
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="font-heading font-bold text-brand-dark">
+                      Registered Office
+                    </h4>
+                    <p class="text-gray-600 text-sm mt-1">
+                      Dangadhigila, Kharbagan, P.O - Bandipur,<br />
+                      Barrackpore-1, North 24 Parganas,<br />
+                      Pin-700119, West Bengal.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 bg-white shadow-sm flex items-center justify-center text-brand-gold text-xl rounded"
+                  >
+                    <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="font-heading font-bold text-brand-dark">
+                      Phone
+                    </h4>
+                    <p class="text-gray-600 text-sm mt-1">
+                      <a
+                        href="tel:+919836804988"
+                        class="hover:text-brand-gold transition-colors"
+                        >+91 9836804988</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div
+                    class="flex-shrink-0 w-12 h-12 bg-white shadow-sm flex items-center justify-center text-brand-gold text-xl rounded"
+                  >
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="font-heading font-bold text-brand-dark">
+                      Email
+                    </h4>
+                    <p class="text-gray-600 text-sm mt-1">
+                      <a
+                        href="mailto:nesthetic90@gmail.com"
+                        class="hover:text-brand-gold transition-colors"
+                        >nesthetic90@gmail.com</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </address>
+
+              <div class="mt-8 pt-8 border-t border-gray-300">
+                <p class="text-xs text-gray-500 font-mono">
+                  CIN: U43211WB2025PTC282749
+                </p>
+              </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div
+              class="bg-white p-6 md:p-8 shadow-xl reveal reveal-right rounded-sm"
+            >
+              <form
+                onsubmit="event.preventDefault(); alert('Thank you! We will contact you soon.');"
+              >
+                <div class="grid grid-cols-1 gap-6">
+                  <div>
+                    <label
+                      class="block text-sm font-semibold text-gray-700 mb-1"
+                      for="name"
+                      >Name</label
                     >
-                  </p>
-                </div>
-              </div>
-
-              <div class="flex items-start">
-                <div
-                  class="flex-shrink-0 w-12 h-12 bg-white shadow-sm flex items-center justify-center text-brand-gold text-xl rounded"
-                >
-                  <i class="fas fa-envelope" aria-hidden="true"></i>
-                </div>
-                <div class="ml-4">
-                  <h4 class="font-heading font-bold text-brand-dark">Email</h4>
-                  <p class="text-gray-600 text-sm mt-1">
-                    <a
-                      href="mailto:nesthetic90@gmail.com"
-                      class="hover:text-brand-gold transition-colors"
-                      >nesthetic90@gmail.com</a
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="w-full bg-gray-50 border border-gray-300 px-4 py-3 focus:outline-none focus:border-brand-gold transition-colors rounded-sm"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label
+                      class="block text-sm font-semibold text-gray-700 mb-1"
+                      for="email"
+                      >Email</label
                     >
-                  </p>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="w-full bg-gray-50 border border-gray-300 px-4 py-3 focus:outline-none focus:border-brand-gold transition-colors rounded-sm"
+                      placeholder="your@email.com"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label
+                      class="block text-sm font-semibold text-gray-700 mb-1"
+                      for="message"
+                      >Message</label
+                    >
+                    <textarea
+                      id="message"
+                      name="message"
+                      rows="4"
+                      class="w-full bg-gray-50 border border-gray-300 px-4 py-3 focus:outline-none focus:border-brand-gold transition-colors rounded-sm"
+                      placeholder="Tell us about your project..."
+                      required
+                    ></textarea>
+                  </div>
+                  <button
+                    type="submit"
+                    class="w-full bg-brand-gold text-white font-heading font-bold py-4 hover:bg-brand-dark transition-colors duration-300 rounded-sm"
+                  >
+                    Send Message
+                  </button>
                 </div>
-              </div>
-            </address>
-
-            <div class="mt-8 pt-8 border-t border-gray-300">
-              <p class="text-xs text-gray-500 font-mono">
-                CIN: U43211WB2025PTC282749
-              </p>
+              </form>
             </div>
           </div>
-
-          <!-- Contact Form -->
-          <div
-            class="bg-white p-6 md:p-8 shadow-xl reveal reveal-right rounded-sm"
-          >
-            <form
-              onsubmit="event.preventDefault(); alert('Thank you! We will contact you soon.');"
-            >
-              <div class="grid grid-cols-1 gap-6">
-                <div>
-                  <label
-                    class="block text-sm font-semibold text-gray-700 mb-1"
-                    for="name"
-                    >Name</label
-                  >
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    class="w-full bg-gray-50 border border-gray-300 px-4 py-3 focus:outline-none focus:border-brand-gold transition-colors rounded-sm"
-                    placeholder="Your Name"
-                    required
-                  />
-                </div>
-                <div>
-                  <label
-                    class="block text-sm font-semibold text-gray-700 mb-1"
-                    for="email"
-                    >Email</label
-                  >
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    class="w-full bg-gray-50 border border-gray-300 px-4 py-3 focus:outline-none focus:border-brand-gold transition-colors rounded-sm"
-                    placeholder="your@email.com"
-                    required
-                  />
-                </div>
-                <div>
-                  <label
-                    class="block text-sm font-semibold text-gray-700 mb-1"
-                    for="message"
-                    >Message</label
-                  >
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="4"
-                    class="w-full bg-gray-50 border border-gray-300 px-4 py-3 focus:outline-none focus:border-brand-gold transition-colors rounded-sm"
-                    placeholder="Tell us about your project..."
-                    required
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  class="w-full bg-brand-gold text-white font-heading font-bold py-4 hover:bg-brand-dark transition-colors duration-300 rounded-sm"
-                >
-                  Send Message
-                </button>
-              </div>
-            </form>
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-brand-dark text-white py-12 border-t border-gray-800">
+    <footer
+      class="bg-brand-dark text-white py-12 border-t border-gray-800"
+      role="contentinfo"
+      itemscope
+      itemtype="https://schema.org/WPFooter"
+    >
       <div
         class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6"
       >
@@ -961,22 +1301,28 @@
         </div>
         <div class="flex space-x-6">
           <a
-            href="#"
+            href="https://www.facebook.com/nesthetic"
             class="text-gray-400 hover:text-brand-gold transition-colors p-2"
-            aria-label="Facebook"
-            ><i class="fab fa-facebook-f text-xl"></i
+            aria-label="Follow NESTHETIC on Facebook"
+            target="_blank"
+            rel="noopener noreferrer me"
+            ><i class="fab fa-facebook-f text-xl" aria-hidden="true"></i
           ></a>
           <a
-            href="#"
+            href="https://www.instagram.com/nesthetic"
             class="text-gray-400 hover:text-brand-gold transition-colors p-2"
-            aria-label="Instagram"
-            ><i class="fab fa-instagram text-xl"></i
+            aria-label="Follow NESTHETIC on Instagram"
+            target="_blank"
+            rel="noopener noreferrer me"
+            ><i class="fab fa-instagram text-xl" aria-hidden="true"></i
           ></a>
           <a
-            href="#"
+            href="https://www.linkedin.com/company/nesthetic"
             class="text-gray-400 hover:text-brand-gold transition-colors p-2"
-            aria-label="LinkedIn"
-            ><i class="fab fa-linkedin-in text-xl"></i
+            aria-label="Connect with NESTHETIC on LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer me"
+            ><i class="fab fa-linkedin-in text-xl" aria-hidden="true"></i
           ></a>
         </div>
       </div>

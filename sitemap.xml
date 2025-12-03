@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.nesthetic.in/</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:title>NESTHETIC Interior Design Studio - Hero Image</image:title>
+      <image:caption>Luxury Industrial Style Living Room Interior Design by NESTHETIC</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- About Section -->
+  <url>
+    <loc>https://www.nesthetic.in/#about</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1556911220-bff31c812dba?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80</image:loc>
+      <image:title>NESTHETIC Interior Design Team</image:title>
+      <image:caption>Professional Interior Designers planning a project in Kolkata</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Services Section -->
+  <url>
+    <loc>https://www.nesthetic.in/#services</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Portfolio Section -->
+  <url>
+    <loc>https://www.nesthetic.in/#portfolio</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80</image:loc>
+      <image:title>Modern Industrial Loft Design</image:title>
+      <image:caption>Modern Industrial Loft Interior Design in Kolkata by NESTHETIC</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80</image:loc>
+      <image:title>Tech Office Workspace Design</image:title>
+      <image:caption>Tech Office Workspace Interior Design with Modern Lighting</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80</image:loc>
+      <image:title>Urban Cafe Interior</image:title>
+      <image:caption>Urban Cafe Interior Design with Rustic Elements</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1617103996702-96ff29b1c467?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80</image:loc>
+      <image:title>Minimalist Home Renovation</image:title>
+      <image:caption>Minimalist Home Renovation Interior Design by NESTHETIC</image:caption>
+    </image:image>
+  </url>
+  
+  <!-- Contact Section -->
+  <url>
+    <loc>https://www.nesthetic.in/#contact</loc>
+    <lastmod>2025-12-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

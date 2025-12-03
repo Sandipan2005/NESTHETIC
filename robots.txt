@@ -1,0 +1,44 @@
+# Robots.txt for NESTHETIC Private Limited
+# https://www.nesthetic.in/
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.nesthetic.in/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 10
+
+# Block common non-content paths (add more as needed)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /api/
+
+# Allow all major search engine bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Block AI training bots (optional - uncomment if desired)
+# User-agent: GPTBot
+# Disallow: /
+# User-agent: ChatGPT-User
+# Disallow: /
+# User-agent: CCBot
+# Disallow: /
