@@ -1179,10 +1179,27 @@
             <div
               class="bg-white p-6 md:p-8 shadow-xl reveal reveal-right rounded-sm"
             >
-              <!-- 
-                FORM FOR PREVIEW MODE (Uses JavaScript)
-                To go live, change opening tag to: <form action="contact.php" method="POST">
-              -->
+              <!-- Form Status Messages -->
+              <div id="form-success" class="hidden mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-sm">
+                <div class="flex items-center">
+                  <i class="fas fa-check-circle mr-3 text-xl"></i>
+                  <div>
+                    <p class="font-semibold">Thank you!</p>
+                    <p class="text-sm">Your message has been sent successfully. We'll contact you soon.</p>
+                  </div>
+                </div>
+              </div>
+              <div id="form-error" class="hidden mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-sm">
+                <div class="flex items-center">
+                  <i class="fas fa-exclamation-circle mr-3 text-xl"></i>
+                  <div>
+                    <p class="font-semibold">Oops!</p>
+                    <p class="text-sm">Something went wrong. Please try again or contact us directly.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Contact Form -->
               <form action="contact.php" method="POST">
                 <div class="grid grid-cols-1 gap-6">
                   <div>
@@ -1295,6 +1312,28 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
+      // Check URL for form status and display message
+      (function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const status = urlParams.get('status');
+        
+        if (status === 'success') {
+          document.getElementById('form-success').classList.remove('hidden');
+          // Scroll to contact section
+          setTimeout(() => {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+          }, 100);
+          // Clean URL
+          window.history.replaceState({}, document.title, window.location.pathname);
+        } else if (status === 'error') {
+          document.getElementById('form-error').classList.remove('hidden');
+          setTimeout(() => {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+          }, 100);
+          window.history.replaceState({}, document.title, window.location.pathname);
+        }
+      })();
+
       // Initialize Swiper for Portfolio
       const portfolioSwiper = new Swiper(".portfolioSwiper", {
         slidesPerView: 1,
