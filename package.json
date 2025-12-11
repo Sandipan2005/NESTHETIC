@@ -1,0 +1,9 @@
+{
+  "name": "nesthetic-contact-api",
+  "version": "1.0.0",
+  "description": "NESTHETIC Contact Form API",
+  "type": "module",
+  "dependencies": {
+    "nodemailer": "^6.9.7"
+  }
+}

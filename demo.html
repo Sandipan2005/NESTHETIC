@@ -10,18 +10,15 @@
          Niche: Industrial Interior Design, Turnkey Execution
     =============================================== -->
 
-    <!-- Primary Title: Brand + Primary Keyword + Location -->
     <title>
       NESTHETIC - Design & Build | Complete Interior Solutions & Civil Execution | Kolkata
     </title>
 
-    <!-- Meta Description: Optimized for CTR (Click Through Rate) and AI Summaries -->
     <meta
       name="description"
       content="NESTHETIC Pvt Ltd provides expert Industrial Interior Design and Civil Execution in Barrackpore, Kolkata, and West Bengal. We offer complete turnkey solutions—from 3D design to electrical, plumbing, and furniture manufacturing."
     />
 
-    <!-- Keywords: Broad and Long-tail for AI Context -->
     <meta
       name="keywords"
       content="Interior Design, Industrial Interior Design, Home Renovation Kolkata, Office Interior Design Barrackpore, Office Interior Design India, Office Interior Design Kolkata, Office Interior Design West Bengal, Residential Interior Design Barrackpore, Residential Interior Design India, Residential Interior Design Kolkata, Residential Interior Design West Bengal, Commercial Interior Design Barrackpore, Commercial Interior Design Kolkata, Commercial Interior Design West Bengal, Commercial Interior Design India, Home Interior Design Barrackpore, Home Interior Design Kolkata, Home Interior Design West Bengal, Commercial Interiors West Bengal, NESTHETIC, Luxury Interiors, Interior Design Kolkata, Interior Decorator Barrackpore, Turnkey Interior Contractors West Bengal, Industrial Interior Design India, Home Renovation North 24 Parganas, Office Interior Design Kolkata, Modular Kitchen Manufacturers Barrackpore, Civil Contractors Kolkata, Luxury Interiors India, NESTHETIC Private Limited"
@@ -30,23 +27,22 @@
     <meta name="author" content="NESTHETIC Private Limited" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     
-    <!-- Geo-Tagging for Local SEO (Helps in 'Near Me' searches) -->
+    <!-- Geo-Tagging for Local SEO -->
     <meta name="geo.region" content="IN-WB" />
     <meta name="geo.placename" content="Barrackpore" />
     <meta name="geo.position" content="22.7674;88.3672" />
     <meta name="ICBM" content="22.7674, 88.3672" />
 
-    <!-- Canonical URL to prevent duplicate content issues -->
+    <!-- Canonical URL -->
     <link rel="canonical" href="https://www.nesthetic.in/" />
 
-    <!-- OPEN GRAPH (Facebook / LinkedIn / WhatsApp) -->
+    <!-- OPEN GRAPH -->
     <meta property="og:locale" content="en_IN" />
     <meta property="og:type" content="business.business" />
     <meta property="og:title" content="NESTHETIC - Premium Interior Design & Build Firm" />
     <meta property="og:description" content="Transforming spaces with raw elegance. We handle everything from design to civil execution in Kolkata and Barrackpore." />
     <meta property="og:url" content="https://www.nesthetic.in/" />
     <meta property="og:site_name" content="NESTHETIC" />
-    <!-- Replace with a real hosted image URL for best results -->
     <meta property="og:image" content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" />
 
     <!-- TWITTER CARDS -->
@@ -55,8 +51,7 @@
     <meta name="twitter:description" content="Expert interior solutions in West Bengal. Design, Build, Deliver." />
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" />
 
-    <!-- SCHEMA MARKUP (JSON-LD) - The Language of AI -->
-    <!-- This tells Google specifically that you are a Local Business -->
+    <!-- SCHEMA MARKUP (JSON-LD) -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -126,14 +121,12 @@
     <link rel="preconnect" href="https://cdn.tailwindcss.com" />
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
 
-    <!-- Favicon -->
-   <!-- 
+    <!-- 
       UPDATED FAVICON LINK
       Now points to the external file 'favicon.svg' for better Google indexing
     -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="apple-touch-icon" href="favicon.svg" />
-
 
     <!-- Fonts -->
     <link
@@ -266,10 +259,11 @@
         >
           <!-- Logo Area -->
           <a
-            href="https://www.nesthetic.in/"
+            href="#"
             class="flex-shrink-0 flex items-center gap-2 md:gap-3 group"
             aria-label="NESTHETIC Home"
           >
+            <!-- Inline SVG used here for visual display only -->
             <svg
               class="w-12 h-12 md:w-[70px] md:h-[70px] transition-all duration-300 group-hover:scale-105"
               viewBox="0 0 100 100"
@@ -1181,28 +1175,18 @@
             <div
               class="bg-white p-6 md:p-8 shadow-xl reveal reveal-right rounded-sm"
             >
-              <!-- Form Status Messages -->
-              <div id="form-success" class="hidden mb-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-sm">
-                <div class="flex items-center">
-                  <i class="fas fa-check-circle mr-3 text-xl"></i>
-                  <div>
-                    <p class="font-semibold">Thank you!</p>
-                    <p class="text-sm">Your message has been sent successfully. We'll contact you soon.</p>
-                  </div>
-                </div>
-              </div>
-              <div id="form-error" class="hidden mb-6 p-4 bg-red-100 border border-red-400 text-red-700 rounded-sm">
-                <div class="flex items-center">
-                  <i class="fas fa-exclamation-circle mr-3 text-xl"></i>
-                  <div>
-                    <p class="font-semibold">Oops!</p>
-                    <p class="text-sm">Something went wrong. Please try again or contact us directly.</p>
-                  </div>
-                </div>
-              </div>
-              
-              <!-- Contact Form -->
-              <form id="contact-form" class="contact-form">
+              <!-- 
+                WEB3FORMS CONFIGURATION
+                Replace YOUR_ACCESS_KEY_HERE with your key from web3forms.com
+              -->
+              <form action="https://api.web3forms.com/submit" method="POST">
+                
+                <!-- REQUIRED: Your Access Key -->
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+                <!-- OPTIONAL: Success Page Redirect -->
+                <!-- <input type="hidden" name="redirect" value="https://www.nesthetic.in/success.html"> -->
+
                 <div class="grid grid-cols-1 gap-6">
                   <div>
                     <label
@@ -1314,28 +1298,6 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      // Check URL for form status and display message
-      (function() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const status = urlParams.get('status');
-        
-        if (status === 'success') {
-          document.getElementById('form-success').classList.remove('hidden');
-          // Scroll to contact section
-          setTimeout(() => {
-            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-          }, 100);
-          // Clean URL
-          window.history.replaceState({}, document.title, window.location.pathname);
-        } else if (status === 'error') {
-          document.getElementById('form-error').classList.remove('hidden');
-          setTimeout(() => {
-            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-          }, 100);
-          window.history.replaceState({}, document.title, window.location.pathname);
-        }
-      })();
-
       // Initialize Swiper for Portfolio
       const portfolioSwiper = new Swiper(".portfolioSwiper", {
         slidesPerView: 1,
@@ -1482,95 +1444,25 @@
         portfolioSwiper.autoplay.start();
       });
 
-      // Handle Contact Form Submit (Vercel Serverless Function)
-      const contactForm = document.getElementById('contact-form');
-      if (contactForm) {
-        contactForm.addEventListener('submit', async function (e) {
-          e.preventDefault();
-          
-          const submitBtn = this.querySelector('button[type="submit"]');
-          const originalText = submitBtn.innerText;
-          const successDiv = document.getElementById('form-success');
-          const errorDiv = document.getElementById('form-error');
-          
-          // Hide previous messages
-          successDiv.classList.add('hidden');
-          errorDiv.classList.add('hidden');
-          
-          // Show loading state
-          submitBtn.innerText = 'Sending...';
-          submitBtn.disabled = true;
-          submitBtn.classList.add('opacity-75');
+      /* * --- SECURITY SCRIPT ---
+       * This script disables Right Click, F12, and other Developer Tools shortcuts.
+       * Note: This is a deterrent, not absolute protection.
+       */
+      document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+      });
 
-          try {
-            const formData = {
-              name: this.querySelector('#name').value,
-              email: this.querySelector('#email').value,
-              message: this.querySelector('#message').value,
-            };
-
-            const response = await fetch('/api/contact', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify(formData),
-            });
-
-            if (response.ok) {
-              // Show success message
-              successDiv.classList.remove('hidden');
-              this.reset();
-              
-              // Auto-hide success message after 5 seconds
-              setTimeout(() => {
-                successDiv.classList.add('hidden');
-              }, 5000);
-            } else {
-              const data = await response.json();
-              errorDiv.querySelector('p:last-child').textContent = data.error || 'Failed to send message. Please try again.';
-              errorDiv.classList.remove('hidden');
-            }
-          } catch (error) {
-            errorDiv.querySelector('p:last-child').textContent = 'Network error. Please check your connection and try again.';
-            errorDiv.classList.remove('hidden');
-            console.error('Form submission error:', error);
-          } finally {
-            // Reset button
-            submitBtn.innerText = originalText;
-            submitBtn.disabled = false;
-            submitBtn.classList.remove('opacity-75');
-          }
-        });
-      }
-
-      /* * --- SMART SECURITY SCRIPT ---
- * Disables Right Click generally, but ALLOWS it on inputs so users can paste.
- */
-document.addEventListener('contextmenu', function(e) {
-  // Check if the user is clicking on an input field or text area
-  const tag = e.target.tagName;
-  
-  if (tag === 'INPUT' || tag === 'TEXTAREA') {
-    // If it's a form field, do nothing (allow the menu to show)
-    return true; 
-  }
-  
-  // Otherwise, block the menu
-  e.preventDefault();
-});
-
-// Keep your existing key blocks (F12, etc.)
-document.onkeydown = function(e) {
-  if (
-    e.keyCode == 123 || // F12
-    (e.ctrlKey && e.shiftKey && e.keyCode == 73) || // Ctrl+Shift+I
-    (e.ctrlKey && e.shiftKey && e.keyCode == 74) || // Ctrl+Shift+J
-    (e.ctrlKey && e.keyCode == 85) // Ctrl+U
-  ) {
-    return false;
-  }
-};
+      document.onkeydown = function(e) {
+        // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+        if (
+          e.keyCode == 123 || // F12
+          (e.ctrlKey && e.shiftKey && e.keyCode == 73) || // Ctrl+Shift+I
+          (e.ctrlKey && e.shiftKey && e.keyCode == 74) || // Ctrl+Shift+J
+          (e.ctrlKey && e.keyCode == 85) // Ctrl+U
+        ) {
+          return false;
+        }
+      };
     </script>
   </body>
 </html>

@@ -6,3 +6,19 @@
 /NESTHETIC LOGO_page-0001.jpg
 /NESTHETIC.LOGO.html
 /small header nesthetic.pdf
+/.env.local
+/.env.production
+/.vercel
+/README.md
+/node_modules/
+/.next/
+/dist/
+/.vercel/
+.DS_Store
+.vscode/
+npm-debug.log*
+yarn-error.log* 
+README.md
+.env.local
+.env.production
+.env.testing
