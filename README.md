@@ -4,9 +4,11 @@
 
 > Transforming spaces with raw elegance. Complete interior solutions from design to civil execution.
 
-## 🌐 Live Website
+## 🌐 Live Websites
 
-**[https://sandipan2005.github.io/NESTHETIC/](https://sandipan2005.github.io/NESTHETIC/)**
+- **[V1](https://sandipan2005.github.io/NESTHETIC/)**
+
+- **[V2](https://www.nesthetic.in/)** (Primary Website)
 
 ---
 
